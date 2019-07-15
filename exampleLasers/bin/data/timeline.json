@@ -1,0 +1,513 @@
+{
+    "group": {
+        "0": {
+            "Duration": "5.105",
+            "Lock": "0",
+            "Name": "0",
+            "Start": "7.43333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.474"
+        },
+        "01_NoRearToRear": {
+            "Duration": "16.2667",
+            "Lock": "1",
+            "Name": "01_NoRearToRear",
+            "Start": "0",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "02_Ronald": {
+            "Duration": "5.63333",
+            "Lock": "0",
+            "Name": "02_Ronald",
+            "Start": "16.1333",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "03_NeedABeer": {
+            "Duration": "8",
+            "Lock": "0",
+            "Name": "03_NeedABeer",
+            "Start": "21.7333",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "04_Gull": {
+            "Duration": "2.895",
+            "Lock": "0",
+            "Name": "04_Gull",
+            "Start": "29.9333",
+            "Track": "2",
+            "end_padding": "1.895",
+            "start_delay": "0"
+        },
+        "05_NomRear": {
+            "Duration": "5.33333",
+            "Lock": "0",
+            "Name": "05_NomRear",
+            "Start": "32.8",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "06_JeanReno": {
+            "Duration": "6",
+            "Lock": "0",
+            "Name": "06_JeanReno",
+            "Start": "38.4",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "07_SayYeah": {
+            "Duration": "7.884",
+            "Lock": "0",
+            "Name": "07_SayYeah",
+            "Start": "44.1333",
+            "Track": "2",
+            "end_padding": "7.684",
+            "start_delay": "0"
+        },
+        "08_GermanPudding": {
+            "Duration": "5.263",
+            "Lock": "0",
+            "Name": "08_GermanPudding",
+            "Start": "52.2",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "1.263"
+        },
+        "09_SoupOnKnee": {
+            "Duration": "3.22833",
+            "Lock": "0",
+            "Name": "09_SoupOnKnee",
+            "Start": "57.6",
+            "Track": "2",
+            "end_padding": "2.895",
+            "start_delay": "0"
+        },
+        "1": {
+            "Duration": "4.684",
+            "Lock": "0",
+            "Name": "1",
+            "Start": "14.9667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.053"
+        },
+        "10": {
+            "Duration": "1.675",
+            "Lock": "0",
+            "Name": "10",
+            "Start": "44.4667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.211"
+        },
+        "10_LooOfFur": {
+            "Duration": "3.03333",
+            "Lock": "0",
+            "Name": "10_LooOfFur",
+            "Start": "61.4333",
+            "Track": "2",
+            "end_padding": "3",
+            "start_delay": "0"
+        },
+        "11": {
+            "Duration": "2.742",
+            "Lock": "0",
+            "Name": "11",
+            "Start": "46.9",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.474"
+        },
+        "11_GrammarPolice": {
+            "Duration": "2.37533",
+            "Lock": "0",
+            "Name": "11_GrammarPolice",
+            "Start": "64.4667",
+            "Track": "2",
+            "end_padding": "1.842",
+            "start_delay": "0"
+        },
+        "12": {
+            "Duration": "2.289",
+            "Lock": "0",
+            "Name": "12",
+            "Start": "49.7",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.316"
+        },
+        "12_BluePerson": {
+            "Duration": "2.737",
+            "Lock": "0",
+            "Name": "12_BluePerson",
+            "Start": "66.8667",
+            "Track": "2",
+            "end_padding": "1.737",
+            "start_delay": "0"
+        },
+        "13": {
+            "Duration": "5.211",
+            "Lock": "0",
+            "Name": "13",
+            "Start": "52.4",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "2"
+        },
+        "14": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "14",
+            "Start": "57.7667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.421"
+        },
+        "14_JurorParrot": {
+            "Duration": "6.66667",
+            "Lock": "0",
+            "Name": "14_JurorParrot",
+            "Start": "78.3667",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "15": {
+            "Duration": "1.945",
+            "Lock": "0",
+            "Name": "15",
+            "Start": "58.8",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.368"
+        },
+        "15_RihannaRear": {
+            "Duration": "11",
+            "Lock": "0",
+            "Name": "15_RihannaRear",
+            "Start": "85.1",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "16": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "16",
+            "Start": "61.3667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.368"
+        },
+        "17": {
+            "Duration": "2.368",
+            "Lock": "0",
+            "Name": "17",
+            "Start": "64.5333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.947"
+        },
+        "17_Mall": {
+            "Duration": "2.789",
+            "Lock": "0",
+            "Name": "17_Mall",
+            "Start": "99.6667",
+            "Track": "2",
+            "end_padding": "1.789",
+            "start_delay": "0"
+        },
+        "17_Mall-out": {
+            "Duration": "0.966667",
+            "Lock": "0",
+            "Name": "17_Mall-out",
+            "Start": "102.467",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "18": {
+            "Duration": "0",
+            "Lock": "0",
+            "Name": "18",
+            "Start": "67.4333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0"
+        },
+        "18_Vinegar": {
+            "Duration": "4.5",
+            "Lock": "0",
+            "Name": "18_Vinegar",
+            "Start": "103.533",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "19": {
+            "Duration": "2.158",
+            "Lock": "0",
+            "Name": "19",
+            "Start": "67.3333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.211"
+        },
+        "19_Motorbikes": {
+            "Duration": "5.03333",
+            "Lock": "0",
+            "Name": "19_Motorbikes",
+            "Start": "108.367",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "2": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "2",
+            "Start": "20.5",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.474"
+        },
+        "20": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "20",
+            "Start": "70.3667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.789"
+        },
+        "21": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "21",
+            "Start": "72.7667",
+            "Track": "2",
+            "end_transition": "0",
+            "start_transition": "0.579"
+        },
+        "21_GarbageDrawer": {
+            "Duration": "6",
+            "Lock": "0",
+            "Name": "21_GarbageDrawer",
+            "Start": "117.3",
+            "Track": "2",
+            "end_padding": "0",
+            "start_delay": "0"
+        },
+        "22": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "22",
+            "Start": "75.4333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.526"
+        },
+        "22_Avatar": {
+            "Duration": "16.779",
+            "Lock": "0",
+            "Name": "22_Avatar",
+            "Start": "127.1",
+            "Track": "2",
+            "end_padding": "3.579",
+            "start_delay": "0"
+        },
+        "23": {
+            "Duration": "5.763",
+            "Lock": "0",
+            "Name": "23",
+            "Start": "78.3667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.632"
+        },
+        "24": {
+            "Duration": "5.544",
+            "Lock": "0",
+            "Name": "24",
+            "Start": "84.4",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.737"
+        },
+        "25": {
+            "Duration": "3.947",
+            "Lock": "0",
+            "Name": "25",
+            "Start": "91.2",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.842"
+        },
+        "26": {
+            "Duration": "4.684",
+            "Lock": "0",
+            "Name": "26",
+            "Start": "96.3",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1"
+        },
+        "27": {
+            "Duration": "2.842",
+            "Lock": "0",
+            "Name": "27",
+            "Start": "100.567",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.263"
+        },
+        "28": {
+            "Duration": "3.895",
+            "Lock": "0",
+            "Name": "28",
+            "Start": "103.567",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.579"
+        },
+        "29": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "29",
+            "Start": "108.567",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.263"
+        },
+        "3": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "3",
+            "Start": "24.3667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.947"
+        },
+        "30": {
+            "Duration": "4.158",
+            "Lock": "0",
+            "Name": "30",
+            "Start": "112.967",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.421"
+        },
+        "31": {
+            "Duration": "3",
+            "Lock": "0",
+            "Name": "31",
+            "Start": "117.9",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0"
+        },
+        "32": {
+            "Duration": "1.816",
+            "Lock": "0",
+            "Name": "32",
+            "Start": "120.767",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.789"
+        },
+        "33": {
+            "Duration": "2.684",
+            "Lock": "0",
+            "Name": "33",
+            "Start": "123.6",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.263"
+        },
+        "34": {
+            "Duration": "14.639",
+            "Lock": "0",
+            "Name": "34",
+            "Start": "127.333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.053"
+        },
+        "4": {
+            "Duration": "1.942",
+            "Lock": "0",
+            "Name": "4",
+            "Start": "27.1333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.632"
+        },
+        "5": {
+            "Duration": "2.842",
+            "Lock": "0",
+            "Name": "5",
+            "Start": "29.7667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.789"
+        },
+        "6": {
+            "Duration": "4.632",
+            "Lock": "0",
+            "Name": "6",
+            "Start": "33.3",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.421"
+        },
+        "7": {
+            "Duration": "5.368",
+            "Lock": "0",
+            "Name": "7",
+            "Start": "38.1333",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "1.632"
+        },
+        "8": {
+            "Duration": "7.884",
+            "Lock": "0",
+            "Name": "8",
+            "Start": "44.1667",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.368"
+        },
+        "9": {
+            "Duration": "6.693",
+            "Lock": "0",
+            "Name": "9",
+            "Start": "44.8",
+            "Track": "1",
+            "end_transition": "0",
+            "start_transition": "0.211"
+        },
+        "Music": {
+            "Duration": "142.888",
+            "Lock": "1",
+            "Name": "Music",
+            "Start": "0",
+            "Track": "0"
+        },
+        "group": {
+            "Duration": "10",
+            "Lock": "0",
+            "Name": "",
+            "Start": "142.967",
+            "Track": "0"
+        }
+    }
+}

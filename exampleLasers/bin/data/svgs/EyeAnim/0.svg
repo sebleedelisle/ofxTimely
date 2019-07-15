@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="LaserEyes" image-rendering="inherit" baseProfile="basic" version="1.1" x="0px" y="0px" width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Eyef0r1" overflow="visible">
+    <path id="Layer1_0_1_STROKES" stroke="#0F0" stroke-width="17.95" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M224,293.6 Q231.05,302.9 230.85,315.2 230.55,329.55 220.15,339.4 209.8,349.4 195.45,349.05 181.05,348.7 171.2,338.4 161.25,328 161.6,313.6 161.8,301.4 169.35,292.4" test="Eye"/>
+    <g id="LidBlinkf0r1">
+      <path id="Layer2_0_1_STROKES" stroke="#0F0" stroke-width="17.95" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M94.45,289.3 Q123.25,265.95 160.95,265.15 186.85,263.6 212.65,265.95 243.4,269.15 265.4,289.9 275.15,299.1 281.05,311.05 287.8,324.65 292.9,338.9" test="LidBlink"/>
+    </g>
+  </g>
+</svg>

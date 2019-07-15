@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="LaserEyes" image-rendering="inherit" baseProfile="basic" version="1.1" x="0px" y="0px" width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Eyef6r1" overflow="visible">
+    <path id="Layer1_0_1_STROKES" stroke="#0F0" stroke-width="17.95" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M201.4,281.85 Q208.45,291.3 208.05,303.55 207.55,317.95 197,327.65 186.55,337.45 172.2,336.95 157.85,336.4 148.05,325.95 138.3,315.45 138.85,301.1 139.2,288.9 146.85,280" test="Eye"/>
+    <g id="LidBlinkf2r1">
+      <path fill="#000" stroke="none" d="M81.2,221.3 Q81.05,221.15 87.2,279.4 93.35,337.65 104.25,322.45 L108.85,316.75 Q108.076,316.113 107.25,315.45 108.076,316.113 108.85,316.75 118.889,324.792 124.4,329.1 134.9,337.2 143.4,342.3 166.85,356.4 192.65,357.85 222,359.5 244.6,355.05 263.3,351.3 293.5,339.45 L299.75,340.35 Q301.724,327.909 303.55,299.9 307.7,235.5 307.55,235.3 307.4,235.15 194.4,228.3 81.35,221.5 81.2,221.3Z" test="LidBlink"/>
+      <path id="Layer2_0_1_STROKES" stroke="#0F0" stroke-width="17.95" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M293.5,339.45 Q263.3,351.3 244.6,355.05 222,359.5 192.65,357.85 166.85,356.4 143.4,342.3 134.9,337.2 124.4,329.1 118.889,324.792 108.875,316.75 108.076,316.113 107.25,315.45" test="LidBlink"/>
+    </g>
+  </g>
+</svg>

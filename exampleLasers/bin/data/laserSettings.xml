@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Laser>
+	<Test_Pattern>0</Test_Pattern>
+	<Interface>
+		<Show_zones>0</Show_zones>
+		<Show_preview>1</Show_preview>
+		<Show_path_previews>1</Show_path_previews>
+		<Use_bitmap_mask>0</Use_bitmap_mask>
+		<Show_bitmap_mask>0</Show_bitmap_mask>
+	</Interface>
+	<group />
+	<locked>0</locked>
+</Laser>

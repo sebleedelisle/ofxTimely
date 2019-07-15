@@ -1,0 +1,10 @@
+ofxClipper
+ofxGui
+ofxImGui
+ofxLaser
+ofxNetwork
+ofxOpenCv
+ofxPoco
+ofxSvg
+ofxTimely
+ofxXmlSettings

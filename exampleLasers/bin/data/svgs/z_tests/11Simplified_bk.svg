@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="FaceTest" image-rendering="auto" baseProfile="basic" version="1.1" x="0px" y="0px" width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <g id="Eyesf10r1" overflow="visible">
+      <path id="Layer2_0_1_STROKES" stroke="#F00" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M-33.5 -8Q-28.4 -5.9 -20.2 -3.85 -16.1 -2.85 -12.5 -2M13.35 3Q23.35 .5 34.35 0" test="Eyes"/>
+    </g>
+  </defs>
+  <g id="Scene-1f11r1" overflow="visible">
+    <g id="Facef11r1">
+      <g id="Tween-1f11r1">
+        <path id="Layer1_0_1_STROKES" stroke="#FF1202" stroke-width="1.394" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M242.794,198.469 Q240.026,197.767 239.334,197.767" test="Tween 1"/>
+        <path id="Layer3_0_1_STROKES" stroke="#FF1202" stroke-width="1.394" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M277.394,140.905 Q277.394,137.676 275.56,132.446 274.591,129.708 273.311,127.181 272.723,126.865 272.135,126.514 261.859,120.687 250.994,118.441 240.926,116.37 236.566,118.441 M273.311,127.181 Q271.443,123.495 268.952,120.231 256.911,104.401 235.182,104.401 215.46,104.401 198.402,109.806 181.344,115.247 168.75,125.496 155.844,135.991 148.959,150.522 141.762,165.721 141.762,184.078 141.762,195.766 146.71,206.718 151.554,217.493 160.446,225.882 169.546,234.447 181.483,239.15 194.043,244.099 208.194,244.099 227.535,244.099 245.043,237.255 261.27,230.937 273.934,219.564 286.044,208.683 292.791,195.17 299.538,181.656 299.538,168.283 299.538,154.419 291.234,142.976 284.556,133.78 273.311,127.181Z M189.51,190.045 Q191.344,192.607 191.967,197.556 192.762,203.664 193.385,205.349 194.908,209.42 199.163,211.456 204.423,213.913 214.768,213.913 224.352,213.913 232.31,210.263 241.791,205.945 242.794,198.469" test="FaceGFX"/>
+        <use xlink:href="#Eyesf10r1" transform="matrix(.692 0 0 .702 217.5 164.65)"/>
+        <use xlink:href="#Eyesf10r1" transform="matrix(.692 0 0 .702 217.15 154.25)"/>
+      </g>
+    </g>
+  </g>
+</svg>

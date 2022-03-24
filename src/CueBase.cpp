@@ -15,7 +15,7 @@ CueBase :: CueBase() {
 //	trackNum.setName("track");
 	params.add(name);
 	params.add(startTime.set("Start", 0,0,100));
-	params.add(duration.set("Duration", 2,0,5));
+	params.add(duration.set("Duration", 2,0,100));
 	params.add(locked);
 	params.add(trackNum.set("Track", 0, 0, 5));
 	

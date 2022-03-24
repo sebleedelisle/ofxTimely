@@ -44,8 +44,11 @@ class Timeline {
 	
 	void renderCue(CueBase & cue);
 	
+	void shiftAllCues(float timeshift);
+	
 	void initListeners();
 	void removeListeners();
+	bool listenersInitialised = false;
 	
 	bool mousePressed(ofMouseEventArgs &e);
 	bool mouseDragged(ofMouseEventArgs &e);
@@ -56,6 +59,8 @@ class Timeline {
     void sortCues();
 	void checkBounds();
 	void updateTrackRects();
+	void autoSetTimelineEnd();
+	void setVisible(bool state);
 	
 	float timeToPosition(float time);
 	float positionToTime(float position);
@@ -67,6 +72,8 @@ class Timeline {
 		else if(b->isSelected()) return true;
         else return a->getStart()<b->getStart();
     }
+	static ofxImGui::Gui gui;
+	
 	
 	ofxPanel guiSettings; 
 	
@@ -80,7 +87,7 @@ class Timeline {
 	float scrollX = 0, scrollY = 0;
 	float lastScrollXTime = 0, lastScrollYTime = 0;
 	
-	ofxImGui::Gui gui;
+	
 	
 	bool drawCueGui(CueBase& cue);
 
@@ -89,9 +96,12 @@ class Timeline {
 				clickPosition,
 				startOffset;
 	bool isDragging = false,
-		isMouseDown = false; 
+		isMouseDown = false;
+	bool visible = true;
 	ofParameter<bool> locked;
 	
+	
+	float defaultFramerate = 30;
 	
 	protected:
 
@@ -120,3 +130,5 @@ class Timeline {
 	private:
 
 };
+
+

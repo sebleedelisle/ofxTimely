@@ -24,6 +24,7 @@ class CueSound : public CueBase{
 	
 	ofSoundPlayer sound;
 	ofParameter<float> volume; 
+	ofParameter<float> startTrans = 0, endTrans = 0;
 	
 	protected:
 	float soundDuration = 0;

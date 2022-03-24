@@ -20,6 +20,8 @@ class Draggable {
 	virtual bool stopDrag();
 	
 	ofRectangle rect;
+	// a rectangle for before we moved it
+	ofRectangle lastRect;
 	bool isDragging = false, xAxis, yAxis;
 	glm::vec3 clickOffset, startPos;
 	float dragDelay = 0.2;

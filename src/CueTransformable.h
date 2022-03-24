@@ -13,7 +13,11 @@
 class CueTransformable : public CueBase {
 	
 	public:
-	
+	CueTransformable() {
+		//pos.set("Position");
+		//params.add(pos.set("Position", ofPoint(0,0)));
+		
+	}
 	void setPosition(glm::vec3 pos) {
 		setPosition(pos.x, pos.y, pos.z);
 	}
@@ -39,6 +43,7 @@ class CueTransformable : public CueBase {
 	protected:
 
 	glm::vec3 position = glm::vec3();
+	//ofParameter<ofPoint> pos;
 	float scale = 0;
 	float rotation = 0;
 	

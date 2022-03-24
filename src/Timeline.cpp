@@ -8,6 +8,8 @@
 
 #include "Timeline.h"
 
+ofxImGui::Gui Timeline::gui;
+
 Timeline::Timeline() {
 	initListeners();
 	offset.x = 0;
@@ -18,6 +20,7 @@ Timeline::Timeline() {
 	
 	fps = 30;
 	snapToFrame = true;
+	setNumTracks(1); 
 	locked.set("Lock timeline", false);
 }
 
@@ -53,7 +56,7 @@ bool Timeline::getIsPlaying(){
 }
 
 void Timeline::skipForward(bool fast){
-	float skipTime = 1.0f/30.0f;
+	float skipTime = 1.0f/defaultFramerate;
 	if(fast) skipTime = 1;
 	playheadTime+=skipTime;
 	if(playheadTime>duration) {
@@ -73,6 +76,7 @@ void Timeline::skipBack(bool fast){
 void Timeline::addCue(CueBase& cue, int track){
 	cues.push_back(&cue);
 	cue.trackNum = track;
+	// extend the timeline length if the clip goes off the end.
 	if(cue.getEnd()>duration) duration = cue.getEnd();
 	
 	if(track+1>numTracks) numTracks = track+1;
@@ -105,7 +109,7 @@ void Timeline::update(float deltaTime){
 void Timeline::draw(float x, float y, float w){
 
 	// x / y is the bottom left. The height is determined by the track height.
-	
+	if(!visible) return; 
 	ofPushStyle();
 	ofFill();
 	
@@ -397,6 +401,11 @@ bool Timeline :: mouseReleased(ofMouseEventArgs &e){
 		isDragging = false;
 	}
 	playheadDraggable.stopDrag();
+	
+	// bit of a hack to make sure that the settings are saved if the GUI is edited...
+	saveSettings();
+	autoSetTimelineEnd();
+	
 	return wasDragging;
 	
 }
@@ -489,22 +498,32 @@ void Timeline::sortCues() {
 	std::sort(cues.begin(), cues.end(), Timeline::sortAlgorithm );
 }
 void Timeline :: initListeners() {
-	
-	ofAddListener(ofEvents().mousePressed, this, &Timeline::mousePressed, OF_EVENT_ORDER_BEFORE_APP);
-	ofAddListener(ofEvents().mouseReleased, this, &Timeline::mouseReleased, OF_EVENT_ORDER_BEFORE_APP);
-	ofAddListener(ofEvents().mouseDragged, this, &Timeline::mouseDragged, OF_EVENT_ORDER_BEFORE_APP);
-	ofAddListener(ofEvents().mouseScrolled, this, &Timeline::mouseScrolled, OF_EVENT_ORDER_BEFORE_APP);
-
+	if(!listenersInitialised) {
+		ofAddListener(ofEvents().mousePressed, this, &Timeline::mousePressed, OF_EVENT_ORDER_BEFORE_APP);
+		ofAddListener(ofEvents().mouseReleased, this, &Timeline::mouseReleased, OF_EVENT_ORDER_BEFORE_APP);
+		ofAddListener(ofEvents().mouseDragged, this, &Timeline::mouseDragged, OF_EVENT_ORDER_BEFORE_APP);
+		ofAddListener(ofEvents().mouseScrolled, this, &Timeline::mouseScrolled, OF_EVENT_ORDER_BEFORE_APP);
+		listenersInitialised = true;
+	}
 	
 }
 
-void Timeline :: removeListeners() {
+void Timeline :: setVisible(bool state) {
+	if(state!=visible) {
+		visible = state;
+		if(visible) initListeners();
+		else removeListeners();
+	}
 	
-	ofRemoveListener(ofEvents().mousePressed, this, &Timeline::mousePressed, OF_EVENT_ORDER_BEFORE_APP);
-	ofRemoveListener(ofEvents().mouseReleased, this, &Timeline::mouseReleased, OF_EVENT_ORDER_BEFORE_APP);
-	ofRemoveListener(ofEvents().mouseDragged, this, &Timeline::mouseDragged, OF_EVENT_ORDER_BEFORE_APP);
-	ofRemoveListener(ofEvents().mouseScrolled, this, &Timeline::mouseScrolled, OF_EVENT_ORDER_BEFORE_APP);
-
+}
+void Timeline :: removeListeners() {
+	if(listenersInitialised) {
+		ofRemoveListener(ofEvents().mousePressed, this, &Timeline::mousePressed, OF_EVENT_ORDER_BEFORE_APP);
+		ofRemoveListener(ofEvents().mouseReleased, this, &Timeline::mouseReleased, OF_EVENT_ORDER_BEFORE_APP);
+		ofRemoveListener(ofEvents().mouseDragged, this, &Timeline::mouseDragged, OF_EVENT_ORDER_BEFORE_APP);
+		ofRemoveListener(ofEvents().mouseScrolled, this, &Timeline::mouseScrolled, OF_EVENT_ORDER_BEFORE_APP);
+		listenersInitialised = false;
+	}
 }
 
 
@@ -525,7 +544,7 @@ bool Timeline :: saveSettings(){
 	
 	
 }
-bool Timeline :: loadSettings(){
+bool Timeline ::  loadSettings(){
 //
 //	ofxPanel gui;
 //
@@ -547,6 +566,7 @@ bool Timeline :: loadSettings(){
 
 	sortCues();
 	
+	autoSetTimelineEnd();
 	
 }
 
@@ -555,7 +575,13 @@ bool Timeline :: loadSettings(){
 bool Timeline::drawCueGui(CueBase& cue) {
     ofxImGui::Settings guiSettings = ofxImGui::Settings();
 	
-	cueGuiRect.set(cue.rect.getCenter().x, cue.rect.getTop() - 200,800,300);
+	//cue.rect.getCenter() is what I need to fix!
+	if(ofGetMousePressed()) {
+		cueGuiRect.set(cue.lastRect.getCenter().x, cue.lastRect.getTop() - 200,800,300);
+	} else {
+		cueGuiRect.set(cue.rect.getCenter().x, cue.rect.getTop() - 200,800,300);
+		cue.lastRect = cue.rect;
+	}
 	if(cueGuiRect.getRight()>ofGetWidth()) cueGuiRect.x = ofGetWidth()-cueGuiRect.getWidth();
 	guiSettings.windowSize.set(cueGuiRect.getWidth(), cueGuiRect.getHeight());
 	guiSettings.windowPos = cueGuiRect.getTopLeft();
@@ -596,4 +622,20 @@ bool Timeline::drawCueGui(CueBase& cue) {
 	gui.end();
 	
 	return guiSettings.mouseOverGui;
+}
+
+
+
+void Timeline :: shiftAllCues(float timeshift){
+	for(CueBase* cue : cues) {
+		cue->setStart(cue->getStart()+timeshift);
+	}
+	autoSetTimelineEnd();
+	
+}
+void Timeline :: autoSetTimelineEnd() {
+	for(CueBase* cue : cues) {
+		if(duration<cue->getEnd()) duration = cue->getEnd();
+	}
+	
 }

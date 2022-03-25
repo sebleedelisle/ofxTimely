@@ -72,10 +72,10 @@ class Timeline {
 		else if(b->isSelected()) return true;
         else return a->getStart()<b->getStart();
     }
-	static ofxImGui::Gui gui;
+	//static ofxImGui::Gui gui;
 	
 	
-	ofxPanel guiSettings; 
+	ofxPanel guiSettings;
 	
 	bool saveSettings();
 	bool loadSettings();

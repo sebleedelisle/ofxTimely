@@ -8,7 +8,7 @@
 
 #include "Timeline.h"
 
-ofxImGui::Gui Timeline::gui;
+//ofxImGui::Gui Timeline::gui;
 
 Timeline::Timeline() {
 	initListeners();
@@ -587,7 +587,7 @@ bool Timeline::drawCueGui(CueBase& cue) {
 	guiSettings.windowPos = cueGuiRect.getTopLeft();
 	guiSettings.lockPosition = true;
 	
-	gui.begin();
+	//gui.begin();
 	
 	
 	if (ofxImGui::BeginWindow(cue.getName(), guiSettings, false))
@@ -619,7 +619,7 @@ bool Timeline::drawCueGui(CueBase& cue) {
 		ofxImGui::EndWindow(guiSettings);
 	}
 	
-	gui.end();
+	//gui.end();
 	
 	return guiSettings.mouseOverGui;
 }

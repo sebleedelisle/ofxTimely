@@ -639,3 +639,13 @@ void Timeline :: autoSetTimelineEnd() {
 	}
 	
 }
+
+CueBase* Timeline :: getCueByName(string name) {
+    
+    for(CueBase* cue : cues) {
+        if(cue->name.get() == name) {
+            return cue;
+        }
+    }
+    return nullptr;
+}

@@ -56,15 +56,12 @@ class CueBase : public Draggable{
 	
 	int sideDragWidth = 4;
     
-   
-	
 	//ofRectangle rect;
 	ofColor fillColour = ofColor(70,70,90);
 	ofColor strokeColour = ofColor(180,180,200);
 	
 	ofParameterGroup params;
-	
-	
+ 	
 	ofParameter<float> startTime, duration;
     ofParameter<string> name;
 	ofParameter<bool> locked = false;

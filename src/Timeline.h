@@ -37,6 +37,7 @@ class Timeline {
 	void draw(float x, float y, float w);
 
 	void addCue(CueBase& cue, int track = 0);
+    CueBase* getCueByName(string name); 
 	void setNumTracks(int num);
 	
 	void skipForward(bool fast = false);
